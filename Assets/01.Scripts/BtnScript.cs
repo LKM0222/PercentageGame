@@ -23,6 +23,8 @@ public class BtnScript : MonoBehaviour
     }
 
     public void OnEquipSlotBtnClick(){
-        statInfo.text = "설명 들어갈곳!";
+        int code = this.transform.parent.GetComponent<SlotInfo>().equipSlotCode;
+    
+        statInfo.text = code.ToString() + "설명 들어갈곳!";
     }
 }
