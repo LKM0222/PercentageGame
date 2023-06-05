@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataBase : MonoBehaviour
+public class EquipmentSystem : MonoBehaviour
 {
-    public float dmg;
     // Start is called before the first frame update
     void Start()
     {

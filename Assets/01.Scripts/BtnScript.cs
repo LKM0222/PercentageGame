@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BtnScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    //UI
+    [SerializeField] GameObject logScrollview;
+    [SerializeField] GameObject statScrollview;
+
+    //Equipment
+    [SerializeField] Text statInfo;
+
+    public void OnStatBtnClick(){
+        logScrollview.SetActive(false);
+        statScrollview.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void OnLogBtnClick(){
+        logScrollview.SetActive(true);
+        statScrollview.SetActive(false);
+    }
+
+    public void OnEquipSlotBtnClick(){
+        statInfo.text = "설명 들어갈곳!";
     }
 }
