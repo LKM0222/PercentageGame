@@ -12,6 +12,11 @@ public class BtnScript : MonoBehaviour
     //Equipment
     [SerializeField] Text statInfo;
 
+    // test
+    public void OnTestBtn(){
+        print("test!!");
+    }
+
     public void OnStatBtnClick(){
         logScrollview.SetActive(false);
         statScrollview.SetActive(true);
