@@ -19,10 +19,10 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        equip_item_head = 2001;
-        equip_item_body = 2002;
-        equip_item_pants = 2003;
-        equip_item_shoose = 2004;
-        equip_item_weapon = 2005;
+        // equip_item_head = 2001;
+        // equip_item_body = 2002;
+        // equip_item_pants = 2003;
+        // equip_item_shoose = 2004;
+        // equip_item_weapon = 2005;
     }
 }

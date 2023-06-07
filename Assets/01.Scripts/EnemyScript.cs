@@ -26,7 +26,7 @@ public class EnemyScript : MonoBehaviour
     {
         if(other.transform.tag == "Attack"){
             hp -= theDB.dmg;
-            print(hp);
+//            print(hp);
             Destroy(other.gameObject);
         }
     }
