@@ -7,6 +7,17 @@ using UnityEngine;
 //착용중인 장비의 코드를 가져오자.
 public class PlayerStatus : MonoBehaviour
 {
+    public int playerLevel, playerRank;
+
+    public float finalDmg;
+
+    public float Atk;
+    public float defense;
+    public float atkSpd; //defalut = 2.5, max = 0.1 (수정할수도 있음)
+
+    public int Rank;
+
+    public float incomePercent, dmgPercent, expPercent;
     public Item equip_item_head, equip_item_body, equip_item_pants, equip_item_shoose, equip_item_weapon;
 
     DataBase theDB;

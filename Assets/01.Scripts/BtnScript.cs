@@ -17,7 +17,7 @@ public class BtnScript : MonoBehaviour
     //inven
     //[SerializeField] int slotCount;
     QuestionPopup theQuestionPopup;
-    
+    [SerializeField] GameObject theWarningPopup;
     DataBase theDB;
 
     private void Awake() {
@@ -180,8 +180,15 @@ public class BtnScript : MonoBehaviour
         }
     }
     public void OnWeaponDestoryBtnClick(){ //아이템 삭제하고 나서 아이템 장착해제 할것, 또한 장비창에서 아이템 이미지 제거할것.
-        theDB.inventoryList.RemoveAt(theDB.slotCount);
-        Destroy(theQuestionPopup.content.transform.GetChild(theDB.slotCount).gameObject);
+        if(theDB.inventoryList[theDB.slotCount].Get_weapon_Equip()){
+            theWarningPopup.SetActive(true);
+        }
+        else{
+            theDB.inventoryList.RemoveAt(theDB.slotCount);
+            Destroy(theQuestionPopup.content.transform.GetChild(theDB.slotCount).gameObject);
+            this.gameObject.transform.parent.transform.parent.gameObject.SetActive(false);
+        }
+        
     }
 
 

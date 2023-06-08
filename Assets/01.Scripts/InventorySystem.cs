@@ -13,15 +13,20 @@ public class InventorySystem : MonoBehaviour
     void Start()
     {
         theDB = FindObjectOfType<DataBase>();
+
+        //처음 실행할때만 생성해주고 나머지는 아이템 삭제, 아이템 획득에서 처리함.
+        for(;i<theDB.inventoryList.Count;i++){
+            var inven = Instantiate(slotPrefabs, invenContents.transform.position, Quaternion.identity, invenContents.transform);
+            inven.GetComponent<InvenSlot>().item = theDB.inventoryList[i];
+        }  
     }
 
     // Update is called once per frame
     void Update()
     {
-        for(;i<theDB.inventoryList.Count;i++){
-            var inven = Instantiate(slotPrefabs, invenContents.transform.position, Quaternion.identity, invenContents.transform);
-            //인덱스 번호만 찾자.
-            inven.GetComponent<InvenSlot>().item = theDB.inventoryList[i];//인덱스 번호만 찾으면 됨....
-        }    
+        // for(;i<theDB.inventoryList.Count;i++){
+        //     var inven = Instantiate(slotPrefabs, invenContents.transform.position, Quaternion.identity, invenContents.transform);
+        //     inven.GetComponent<InvenSlot>().item = theDB.inventoryList[i];//인덱스 번호만 찾으면 됨....
+        // }    
     }
 }

@@ -5,17 +5,7 @@ using UnityEngine.UI;
 
 public class DataBase : MonoBehaviour
 {
-    public int playerLevel, playerRank;
-
-    public float finalDmg;
-
-    public float Atk;
-    public float defense;
-    public float atkSpd; //defalut = 2.5, max = 0.1 (수정할수도 있음)
-
-    public int Rank;
-
-    public float incomePercent, dmgPercent, expPercent;
+    
 
     static public Item nullItem = new Item("",0,0,0,0,0,0,0,0,0,0,0,0,0);
 
@@ -32,9 +22,9 @@ public class DataBase : MonoBehaviour
         ItemUpdate();
     }
     public void ItemUpdate(){
-        // equipWeponList[0] = inventoryList[
-        // inventoryList.FindIndex(x=> x.Get_weapon_Code() == equipWeponList[0].Get_weapon_Code())];
-        
+        // print(inventoryList.FindIndex(x=> x.Get_weapon_Code() == equipWeponList[0].Get_weapon_Code()));
+        // inventoryList[inventoryList.FindIndex(x=> x.Get_weapon_Code() == equipWeponList[0].Get_weapon_Code())] = equipWeponList[0];
+
     }
 
 
