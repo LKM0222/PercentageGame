@@ -7,7 +7,7 @@ using UnityEngine;
 //착용중인 장비의 코드를 가져오자.
 public class PlayerStatus : MonoBehaviour
 {
-    public int equip_item_head, equip_item_body, equip_item_pants, equip_item_shoose, equip_item_weapon;
+    public Item equip_item_head, equip_item_body, equip_item_pants, equip_item_shoose, equip_item_weapon;
 
     DataBase theDB;
     // Start is called before the first frame update
@@ -19,10 +19,14 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // equip_item_head = 2001;
-        // equip_item_body = 2002;
-        // equip_item_pants = 2003;
-        // equip_item_shoose = 2004;
-        // equip_item_weapon = 2005;
+        equip_item_head = theDB.equipWeponList[0];
+        equip_item_body = theDB.equipWeponList[1];
+        equip_item_pants = theDB.equipWeponList[2];
+        equip_item_shoose = theDB.equipWeponList[3];
+        equip_item_weapon = theDB.equipWeponList[4];
+        
+        
     }
+
+    
 }

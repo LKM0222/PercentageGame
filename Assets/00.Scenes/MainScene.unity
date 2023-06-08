@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlotCode: 1002
-  equipItemCode: 0
+  slotImg: {fileID: 396316676}
 --- !u!1 &112254994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,7 +3275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlotCode: 1003
-  equipItemCode: 0
+  slotImg: {fileID: 163984234}
 --- !u!1 &736425878
 GameObject:
   m_ObjectHideFlags: 0
@@ -4135,7 +4135,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1505869243}
   m_HandleRect: {fileID: 1505869242}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4188,13 +4188,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 864490278}
+  - component: {fileID: 864490279}
   m_Layer: 0
   m_Name: EquipPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &864490278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4219,6 +4220,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &864490279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864490277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41246987d65b24513b7a49368e70a941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884267089
 GameObject:
   m_ObjectHideFlags: 0
@@ -6484,7 +6497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1286405322
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7336,11 +7349,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09332703a92e94454bf5d3ce11f530d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equip_item_head: 200101
-  equip_item_body: 200201
-  equip_item_pants: 200301
-  equip_item_shoose: 200401
-  equip_item_weapon: 200501
+  equip_item_head:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_body:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_pants:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_shoose:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_weapon:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
 --- !u!1 &1477445065
 GameObject:
   m_ObjectHideFlags: 0
@@ -7386,7 +7469,7 @@ MonoBehaviour:
     weapon_Rank: 0
     weapon_Code: 200101
     weapon_Type: 1001
-    weapon_Equip: 1
+    weapon_Equip: 0
   - weapon_Name: "\uAC11\uC637"
     weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
     weapon_Dmg: 100
@@ -7400,7 +7483,7 @@ MonoBehaviour:
     weapon_Rank: 0
     weapon_Code: 200201
     weapon_Type: 1002
-    weapon_Equip: 1
+    weapon_Equip: 0
   - weapon_Name: "\uBC14\uC9C0"
     weapon_Img: {fileID: 21300000, guid: 1ee20ddd5bfe9452491d3045379f0da2, type: 3}
     weapon_Dmg: 100
@@ -7414,7 +7497,7 @@ MonoBehaviour:
     weapon_Rank: 0
     weapon_Code: 200301
     weapon_Type: 1003
-    weapon_Equip: 1
+    weapon_Equip: 0
   - weapon_Name: "\uC2E0\uBC1C"
     weapon_Img: {fileID: 21300000, guid: b75564908983c45679934b280f80e130, type: 3}
     weapon_Dmg: 100
@@ -7428,7 +7511,7 @@ MonoBehaviour:
     weapon_Rank: 0
     weapon_Code: 200401
     weapon_Type: 1004
-    weapon_Equip: 1
+    weapon_Equip: 0
   - weapon_Name: "\uBB34\uAE30"
     weapon_Img: {fileID: 21300000, guid: 7bd841822e5334b738a8a9862ba24f45, type: 3}
     weapon_Dmg: 100
@@ -7440,9 +7523,9 @@ MonoBehaviour:
     weapon_Level: 1
     weapon_MaxLevel: 20
     weapon_Rank: 0
-    weapon_Code: 200501
+    weapon_Code: 200502
     weapon_Type: 1005
-    weapon_Equip: 1
+    weapon_Equip: 0
   - weapon_Name: test
     weapon_Img: {fileID: 21300000, guid: 9c1b7424cca7f4c2ea11ea16f0ce02ff, type: 3}
     weapon_Dmg: 100
@@ -7457,7 +7540,204 @@ MonoBehaviour:
     weapon_Code: 200000
     weapon_Type: 0
     weapon_Equip: 0
-  inventoryList: a50d0300090e03006d0e0300d10e0300350f0300400d0300400d0300400d0300
+  - weapon_Name: "\uAE30\uBCF8\uBB34\uAE30"
+    weapon_Img: {fileID: 21300000, guid: d8f9844ed42cc4dd695f698d05d62209, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 1
+    weapon_Code: 200501
+    weapon_Type: 1005
+    weapon_Equip: 1
+  inventoryList:
+  - weapon_Name: "\uD22C\uAD6C"
+    weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 0
+    weapon_Code: 200101
+    weapon_Type: 1001
+    weapon_Equip: 0
+  - weapon_Name: "\uAC11\uC637"
+    weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 0
+    weapon_Code: 200201
+    weapon_Type: 1002
+    weapon_Equip: 0
+  - weapon_Name: "\uBC14\uC9C0"
+    weapon_Img: {fileID: 21300000, guid: 1ee20ddd5bfe9452491d3045379f0da2, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 0
+    weapon_Code: 200301
+    weapon_Type: 1003
+    weapon_Equip: 0
+  - weapon_Name: "\uC2E0\uBC1C"
+    weapon_Img: {fileID: 21300000, guid: b75564908983c45679934b280f80e130, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 0
+    weapon_Code: 200401
+    weapon_Type: 1004
+    weapon_Equip: 0
+  - weapon_Name: "\uBB34\uAE30"
+    weapon_Img: {fileID: 21300000, guid: 7bd841822e5334b738a8a9862ba24f45, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 0
+    weapon_Code: 200502
+    weapon_Type: 1005
+    weapon_Equip: 0
+  - weapon_Name: test
+    weapon_Img: {fileID: 21300000, guid: 9c1b7424cca7f4c2ea11ea16f0ce02ff, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 1
+    weapon_Code: 200000
+    weapon_Type: 0
+    weapon_Equip: 0
+  - weapon_Name: test
+    weapon_Img: {fileID: 21300000, guid: 9c1b7424cca7f4c2ea11ea16f0ce02ff, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 1
+    weapon_Code: 200000
+    weapon_Type: 0
+    weapon_Equip: 0
+  - weapon_Name: "\uAE30\uBCF8\uBB34\uAE30"
+    weapon_Img: {fileID: 21300000, guid: d8f9844ed42cc4dd695f698d05d62209, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 1
+    weapon_Code: 200501
+    weapon_Type: 1005
+    weapon_Equip: 1
+  equipWeponList:
+  - weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  - weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  - weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  - weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  - weapon_Name: "\uAE30\uBCF8\uBB34\uAE30"
+    weapon_Img: {fileID: 21300000, guid: d8f9844ed42cc4dd695f698d05d62209, type: 3}
+    weapon_Dmg: 100
+    weapon_IncomePercent: 0.1
+    weapon_DmgPercent: 1
+    weapon_ExpPercent: 1
+    weapon_Price: 100
+    weapon_UpgradeCost: 0
+    weapon_Level: 1
+    weapon_MaxLevel: 20
+    weapon_Rank: 1
+    weapon_Code: 200501
+    weapon_Type: 1005
+    weapon_Equip: 1
   slotCount: 0
 --- !u!4 &1477445067
 Transform:
@@ -7960,7 +8240,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8118,9 +8398,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1670713142
 MonoBehaviour:
@@ -8387,7 +8667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlotCode: 1004
-  equipItemCode: 0
+  slotImg: {fileID: 141487744}
 --- !u!1 &1709652087
 GameObject:
   m_ObjectHideFlags: 0
@@ -10159,7 +10439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlotCode: 1001
-  equipItemCode: 0
+  slotImg: {fileID: 852078643}
 --- !u!1 &2079576812
 GameObject:
   m_ObjectHideFlags: 0
@@ -10368,7 +10648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlotCode: 1005
-  equipItemCode: 0
+  slotImg: {fileID: 298817869}
 --- !u!1 &2145408713
 GameObject:
   m_ObjectHideFlags: 0
@@ -10405,7 +10685,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000050064053}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -28.900024, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2145408715
 MonoBehaviour:

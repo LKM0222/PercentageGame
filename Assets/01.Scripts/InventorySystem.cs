@@ -8,7 +8,7 @@ public class InventorySystem : MonoBehaviour
     public GameObject invenContents;
     public GameObject slotPrefabs;
     DataBase theDB;
-    public int i = 0; //아이템 삭제 시 i를 0으로 초기화한 후 다시 정리를 해야될듯...
+    public int i; //아이템 삭제 시 i를 0으로 초기화한 후 다시 정리를 해야될듯...
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,8 @@ public class InventorySystem : MonoBehaviour
     {
         for(;i<theDB.inventoryList.Count;i++){
             var inven = Instantiate(slotPrefabs, invenContents.transform.position, Quaternion.identity, invenContents.transform);
-            inven.GetComponent<InvenSlot>().itemCode = theDB.inventoryList[i];
+            //인덱스 번호만 찾자.
+            inven.GetComponent<InvenSlot>().item = theDB.inventoryList[i];//인덱스 번호만 찾으면 됨....
         }    
     }
 }

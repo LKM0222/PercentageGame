@@ -26,7 +26,7 @@ public class EnemyScript : MonoBehaviour
     {
         if(other.transform.tag == "Attack"){
             hp -= theDB.dmg;
-//            print(hp);
+            //enemy의 체력바를 구현해야됨...
             Destroy(other.gameObject);
         }
     }

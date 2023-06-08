@@ -209,6 +209,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
+  itemCode: 0
+  itemImg: {fileID: 5808757152510750565}
+  itemName: {fileID: 5808757152605261672}
+  equipImg: {fileID: 7865204612833776558}
+  item:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
 --- !u!1 &5808757153050089402
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +377,6 @@ MonoBehaviour:
   logScrollview: {fileID: 0}
   statScrollview: {fileID: 0}
   statInfo: {fileID: 0}
-  soltCount: 0
 --- !u!1 &5808757153821548873
 GameObject:
   m_ObjectHideFlags: 0

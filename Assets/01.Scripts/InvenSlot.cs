@@ -10,34 +10,31 @@ public class InvenSlot : MonoBehaviour
     public int count;
     public int itemCode;
 
+    public Image itemImg;
+    public Text itemName;
+    public GameObject equipImg;
+    public Item item;
+
     // Start is called before the first frame update
     void Start()
     {
         theDB = FindObjectOfType<DataBase>();
         theInventorySystem = FindObjectOfType<InventorySystem>();
+
+        itemCode = item.Get_weapon_Code();
     }
 
     // Update is called once per frame
     void Update()
     { 
-        //리스트의 길이가 변함에 따라 슬롯의 카운트도 같이 변해야됨...
-        count = theDB.inventoryList.IndexOf(itemCode);
-
-        try{
-            this.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().sprite = 
-                theDB.FindItemCodeReturnImg(theDB.inventoryList[count]);
-            this.transform.GetChild(0).transform.GetChild(1).GetComponent<Text>().text = 
-                theDB.FindItemCodeReturnName(theDB.inventoryList[count]);
-            if(theDB.FindItemCodeReturnEquip(theDB.inventoryList[count])){
-                this.transform.GetChild(1).gameObject.SetActive(true);
-            }
-            else{
-                this.transform.GetChild(1).gameObject.SetActive(false);
-            }
-        }catch(System.IndexOutOfRangeException){
-            print("item Destory!");
+        count = theDB.inventoryList.IndexOf(item);
+        itemImg.sprite = item.Get_weapon_Img();
+        itemName.text = item.Get_weapon_Name();
+        if(item.Get_weapon_Equip()){
+            equipImg.SetActive(true);
         }
-
-        
+        else{
+            equipImg.SetActive(false);
+        }        
     }
 }
