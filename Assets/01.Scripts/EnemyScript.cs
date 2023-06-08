@@ -7,13 +7,11 @@ public class EnemyScript : MonoBehaviour
 {
     [SerializeField] float hp;
 
-    
-
-    DataBase theDB;
+    PlayerStatus thePlayer;
     // Start is called before the first frame update
     void Start()
     {
-        theDB = FindObjectOfType<DataBase>();
+        thePlayer = FindObjectOfType<PlayerStatus>();
     }
 
     // Update is called once per frame
@@ -25,7 +23,7 @@ public class EnemyScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.transform.tag == "Attack"){
-            hp -= theDB.dmg;
+            hp -= thePlayer.Atk;
             //enemy의 체력바를 구현해야됨...
             Destroy(other.gameObject);
         }

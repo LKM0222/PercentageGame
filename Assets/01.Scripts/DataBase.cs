@@ -5,9 +5,19 @@ using UnityEngine.UI;
 
 public class DataBase : MonoBehaviour
 {
-    public float dmg;
+    public int playerLevel, playerRank;
+
+    public float finalDmg;
+
+    public float Atk;
+    public float defense;
     public float atkSpd; //defalut = 2.5, max = 0.1 (수정할수도 있음)
-    static public Item nullItem = new Item("",0,0,0,0,0,0,0,0,0,0,0);
+
+    public int Rank;
+
+    public float incomePercent, dmgPercent, expPercent;
+
+    static public Item nullItem = new Item("",0,0,0,0,0,0,0,0,0,0,0,0,0);
 
     public List<Item> itemList = new List<Item>();
 
@@ -17,46 +27,16 @@ public class DataBase : MonoBehaviour
     public Item[] equipWeponList = new Item[5];
     public int slotCount; //인벤토리에서 몇번째 아이템인지 
     
-    public Sprite FindItemCodeReturnImg(int _itemCode){
-        for(int i = 0;i<itemList.Count;i++){
-            if(itemList[i].Get_weapon_Code() == _itemCode){
-                return itemList[i].Get_weapon_Img();
-            }
-        }
-        return null;
+    private void Update()
+    {
+        ItemUpdate();
+    }
+    public void ItemUpdate(){
+        // equipWeponList[0] = inventoryList[
+        // inventoryList.FindIndex(x=> x.Get_weapon_Code() == equipWeponList[0].Get_weapon_Code())];
+        
     }
 
-    public string FindItemCodeReturnName(int _itemCode){
-        for(int i = 0;i<itemList.Count;i++){
-            if(itemList[i].Get_weapon_Code() == _itemCode){
-                return itemList[i].Get_weapon_Name();
-            }
-        }
-        return "Error";
-    }
-    public bool FindItemCodeReturnEquip(int _itemCode){
-        for(int i = 0;i<itemList.Count;i++){
-            if(itemList[i].Get_weapon_Code() == _itemCode){
-                return itemList[i].Get_weapon_Equip();
-            }
-        }
-        return false;
-    }
 
-    public void FindItemCodeSetEquip(int _itemCode,bool _item_status){
-        for(int i = 0;i<itemList.Count;i++){
-            if(itemList[i].Get_weapon_Code() == _itemCode){
-                itemList[i].Set_weapon_Equip(_item_status);
-            }
-        }
-    }
 
-    public Item FindItemcodeReturnItem(int _itemCode){
-        for(int i = 0;i<itemList.Count;i++){
-            if(itemList[i].Get_weapon_Code() == _itemCode){
-                return itemList[i];
-            }
-        }
-        return null;
-    }
 }

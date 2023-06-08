@@ -24,9 +24,6 @@ public class PlayerStatus : MonoBehaviour
         equip_item_pants = theDB.equipWeponList[2];
         equip_item_shoose = theDB.equipWeponList[3];
         equip_item_weapon = theDB.equipWeponList[4];
-        
-        
     }
 
-    
 }

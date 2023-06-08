@@ -24,28 +24,53 @@ public class EquipSlotInfo : MonoBehaviour
         //이미지만 띄워주는 용도, 아이템 관리는 인벤토리에서 진행
         switch(equipSlotCode){
             case 1001://head
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite 
-                    = thePlayerStatus.equip_item_head.Get_weapon_Img();
+                if(theDB.equipWeponList[0].Get_weapon_Code() == 0){
+                    slotImg.GetComponent<Image>().color = new Color(0f,0f,0f,0f);
+                }
+                else {
+                    slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
+                    slotImg.sprite = thePlayerStatus.equip_item_head.Get_weapon_Img();
+                }
                 break;
 
             case 1002://body
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite 
-                    = thePlayerStatus.equip_item_body.Get_weapon_Img();
+                if(theDB.equipWeponList[1].Get_weapon_Code() == 0){
+                    slotImg.GetComponent<Image>().color = new Color(0f,0f,0f,0f);
+                }
+                else {
+                    slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
+                    slotImg.sprite = thePlayerStatus.equip_item_body.Get_weapon_Img();
+                }
                 break;
 
             case 1003://pants
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite 
-                    = thePlayerStatus.equip_item_pants.Get_weapon_Img();
+                if(theDB.equipWeponList[2].Get_weapon_Code() == 0){
+                    slotImg.GetComponent<Image>().color = new Color(0f,0f,0f,0f);
+                }
+                else {
+                    slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
+                    slotImg.sprite = thePlayerStatus.equip_item_pants.Get_weapon_Img();
+                }
                 break;
 
             case 1004://shoose
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite 
-                    = thePlayerStatus.equip_item_shoose.Get_weapon_Img();
+                if(theDB.equipWeponList[3].Get_weapon_Code() == 0){
+                    slotImg.GetComponent<Image>().color = new Color(0f,0f,0f,0f);
+                }
+                else {
+                    slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
+                    slotImg.sprite = thePlayerStatus.equip_item_shoose.Get_weapon_Img();
+                }
                 break;
 
             case 1005://weapon
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite 
-                    = thePlayerStatus.equip_item_weapon.Get_weapon_Img();
+                if(theDB.equipWeponList[4].Get_weapon_Code() == 0){
+                    slotImg.GetComponent<Image>().color = new Color(0f,0f,0f,0f);
+                }
+                else {
+                    slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
+                    slotImg.sprite = thePlayerStatus.equip_item_weapon.Get_weapon_Img();
+                }
                 break;
         }
     }

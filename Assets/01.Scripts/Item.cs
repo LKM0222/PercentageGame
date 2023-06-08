@@ -8,13 +8,15 @@ public class Item
 {
     [SerializeField] string weapon_Name;
     [SerializeField] Sprite weapon_Img;
-    [SerializeField] float weapon_Dmg, weapon_IncomePercent, weapon_DmgPercent, weapon_ExpPercent;
+    [SerializeField] float weapon_Dmg,weapon_Def,weapon_AtkSpd, weapon_IncomePercent, weapon_DmgPercent, weapon_ExpPercent;
     [SerializeField] int weapon_Price, weapon_UpgradeCost, weapon_Level, weapon_MaxLevel, weapon_Rank, weapon_Code, weapon_Type;
     [SerializeField] bool weapon_Equip;
-    public Item(string _weapon_Name, float _weapon_Dmg, float _weapon_IncomePercent, float _weapon_DmgPercent, float _weapon_ExpPercent,
+    public Item(string _weapon_Name, float _weapon_Dmg,float _weapon_Def, float _weapon_AtkSpd, float _weapon_IncomePercent, float _weapon_DmgPercent, float _weapon_ExpPercent,
     int _weapon_Price, int _weapon_UpgradeCost, int _weapon_Level, int _weapon_MaxLevel, int _weapon_Rank, int _weapon_Code,int _weapon_Type, bool _weapon_Equip = false, Sprite _weapon_Img = null){
         weapon_Name = _weapon_Name;
         weapon_Dmg = _weapon_Dmg;
+        weapon_Def = _weapon_Def;
+        weapon_AtkSpd = _weapon_AtkSpd;
         weapon_IncomePercent = _weapon_IncomePercent;
         weapon_ExpPercent = _weapon_ExpPercent;
         weapon_Price = _weapon_Price;
@@ -34,6 +36,12 @@ public class Item
     }
     public float Get_weapon_Dmg(){
         return weapon_Dmg;
+    }
+    public float Get_weapon_Def(){
+        return weapon_Def;
+    }
+    public float Get_weapon_AtkSpd(){
+        return weapon_AtkSpd;
     }
     public float Get_weapon_IncomePercent(){
         return weapon_IncomePercent;
@@ -78,6 +86,12 @@ public class Item
     public void Set_weapon_Dmg(float _weapon_Dmg){
         weapon_Dmg = _weapon_Dmg;
     }
+    public void Set_weapon_Def(float _weapon_Def){
+        weapon_Def = _weapon_Def;
+    }
+    public void Set_weapon_AtkSpd(float _weapon_AtkSpd){
+        weapon_AtkSpd = _weapon_AtkSpd;
+    }
     public void Set_weapon_IncomePercent(float _weapon_IncomePercent){
         weapon_IncomePercent = _weapon_IncomePercent;
     }
@@ -110,5 +124,19 @@ public class Item
     }
     public void Set_weapon_Type(int _weapon_Type){
         weapon_Type = _weapon_Type;
+    }
+
+    static public string Show_wepon_Info(Item item){
+        string str = item.Get_weapon_Name() + "\n"+
+        "랭크"+ "\t" + item.Get_weapon_Rank()+"\n"+
+        "공격력"+ "\t"+ item.Get_weapon_Dmg()+"\n"+
+        "방어력"+ "\t"+ item.Get_weapon_Def()+"\n"+
+        "공격속도"+ "\t"+ item.Get_weapon_AtkSpd()+"\n"+
+        "~~~~~~~~~~~~~~\n" + "부스텟 \n"+
+        "데미지증가량"+ "\t" + item.Get_weapon_DmgPercent()+"\n"+
+        "경험치증가량"+ "\t" + item.Get_weapon_ExpPercent()+"\n"+
+        "코인증가량" + item.Get_weapon_IncomePercent()+"\n";
+
+        return str;
     }
 }

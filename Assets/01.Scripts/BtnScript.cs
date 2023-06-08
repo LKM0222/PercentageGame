@@ -28,9 +28,6 @@ public class BtnScript : MonoBehaviour
     }
     private void Start() {
 
-        if(this.transform.parent.gameObject.tag == "InvenSlot"){
-           // slotCount = this.transform.parent.GetComponent<InvenSlot>().count;
-        }
     }
 
     // test
@@ -50,8 +47,41 @@ public class BtnScript : MonoBehaviour
 
     public void OnEquipSlotBtnClick(){
         int code = this.transform.parent.GetComponent<EquipSlotInfo>().equipSlotCode;
-    
-        statInfo.text = code.ToString() + "설명 들어갈곳!";
+        switch(code){
+            case 1001:
+                if(theDB.equipWeponList[0].Get_weapon_Code() == 0){
+                    statInfo.text = "아이템이 없습니다!";
+                }
+                else statInfo.text = Item.Show_wepon_Info(theDB.equipWeponList[0]);
+                break;
+            case 1002:
+                if(theDB.equipWeponList[1].Get_weapon_Code() == 0){
+                    statInfo.text = "아이템이 없습니다!";
+                }
+                else statInfo.text = Item.Show_wepon_Info(theDB.equipWeponList[1]);
+                break;
+            case 1003:
+                if(theDB.equipWeponList[2].Get_weapon_Code() == 0){
+                    statInfo.text = "아이템이 없습니다!";
+                }
+                else statInfo.text = Item.Show_wepon_Info(theDB.equipWeponList[2]);
+                break;  
+            case 1004:
+                if(theDB.equipWeponList[3].Get_weapon_Code() == 0){
+                    statInfo.text = "아이템이 없습니다!";
+                }
+                else statInfo.text = Item.Show_wepon_Info(theDB.equipWeponList[3]);
+                break;
+            case 1005:
+                if(theDB.equipWeponList[4].Get_weapon_Code() == 0){
+                    statInfo.text = "아이템이 없습니다!";
+                }
+                else statInfo.text = Item.Show_wepon_Info(theDB.equipWeponList[4]);
+                break;
+
+            default:
+                break;
+        }
     }
 
     public void OnInventorySlotBtn(){
@@ -132,19 +162,19 @@ public class BtnScript : MonoBehaviour
                 theDB.equipWeponList[0] = DataBase.nullItem;
                 break;
             case 1002:
-                thePlayer.equip_item_head = DataBase.nullItem;
+                thePlayer.equip_item_body = DataBase.nullItem;
                 theDB.equipWeponList[1] = DataBase.nullItem;
                 break;
             case 1003:
-                thePlayer.equip_item_head = DataBase.nullItem;
+                thePlayer.equip_item_pants = DataBase.nullItem;
                 theDB.equipWeponList[2] = DataBase.nullItem;
                 break;
             case 1004:
-                thePlayer.equip_item_head = DataBase.nullItem;
+                thePlayer.equip_item_shoose = DataBase.nullItem;
                 theDB.equipWeponList[3] = DataBase.nullItem;
                 break;
             case 1005:
-                thePlayer.equip_item_head = DataBase.nullItem;
+                thePlayer.equip_item_weapon = DataBase.nullItem;
                 theDB.equipWeponList[4] = DataBase.nullItem;
                 break;
         }
