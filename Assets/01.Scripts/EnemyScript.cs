@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyScript : MonoBehaviour
 {
+    Enemy theEnemy;
     [SerializeField] float hp;
 
     PlayerStatus thePlayer;
@@ -23,7 +24,7 @@ public class EnemyScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.transform.tag == "Attack"){
-            hp -= thePlayer.Atk;
+            hp -= thePlayer.finalDmg;
             //enemy의 체력바를 구현해야됨...
             Destroy(other.gameObject);
         }

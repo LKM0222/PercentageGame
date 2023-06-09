@@ -6,7 +6,7 @@ using UnityEngine.UI;
 //log에 나오는 스탯
 public class StatSystem : MonoBehaviour
 {
-    [SerializeField] Text dmgText,atkSpdText,defText, incomePercentText, dmgPercentText, expPercentText;
+    [SerializeField] Text finalDmgText,dmgText,atkSpdText,defText, incomePercentText, dmgPercentText, expPercentText;
     PlayerStatus thePlayer;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,7 @@ public class StatSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        finalDmgText.text = thePlayer.SetFinalDmg().ToString();
         dmgText.text = thePlayer.Atk.ToString();
         atkSpdText.text = thePlayer.atkSpd.ToString();
         defText.text = thePlayer.defense.ToString();

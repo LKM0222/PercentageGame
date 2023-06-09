@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class DropItem{
-    Item item;
-    float percent;
+    [SerializeField] Item item;
+    [SerializeField] float percent;
 }
 [System.Serializable]
 public class Enemy
 {
-    string enemy_name;
-    int enemy_code, enemy_hp, enemy_coin, enemy_exp;
-    List<DropItem> dropItems = new List<DropItem>();
+    [SerializeField] string enemy_name;
+    [SerializeField] Sprite enemy_Img;
+    [SerializeField] int enemy_code, enemy_hp, enemy_coin, enemy_exp;
+    [SerializeField] List<DropItem> dropItems = new List<DropItem>();
 
     public Enemy(string _name,int _code, int _hp, int _coin, int _exp){
         enemy_name = _name;

@@ -11,12 +11,16 @@ public class DataBase : MonoBehaviour
 
     public List<Item> itemList = new List<Item>();
 
-
     //inven
     public List<Item> inventoryList = new List<Item>();
     public Item[] equipWeponList = new Item[5];
     public int slotCount; //인벤토리에서 몇번째 아이템인지 
     
+    //enemy
+    public List<Enemy> enemyList = new List<Enemy>();
+
+
+
     private void Update()
     {
         ItemUpdate();

@@ -85,7 +85,7 @@ public class UpgradeSystem : MonoBehaviour
         }
     }
     
-    public void Upgrade(Item item){
+    public void Upgrade(Item item){//업그레이드의 직접적인 행동을 관리하는 함수 아직 아이템의 업그레이드 계수가 확정되지 않았기 때문에 아직 보류
         item.Set_weapon_Dmg(item.Get_weapon_Dmg() + num);
         item.Set_weapon_Level(item.Get_weapon_Level() + 1);
     }
