@@ -15,16 +15,19 @@ public class BtnScript : MonoBehaviour
 
 
     //inven
-    //[SerializeField] int slotCount;
     QuestionPopup theQuestionPopup;
+    [SerializeField] GameObject upgradePopup;
     [SerializeField] GameObject theWarningPopup;
     DataBase theDB;
+
+    //upgrade
+    UpgradeSystem theUpgrade;
 
     private void Awake() {
         theDB = FindObjectOfType<DataBase>();
         theQuestionPopup = FindObjectOfType<QuestionPopup>();
         thePlayer = FindObjectOfType<PlayerStatus>();
-        
+        theUpgrade = FindObjectOfType<UpgradeSystem>();
     }
     private void Start() {
 
@@ -191,7 +194,81 @@ public class BtnScript : MonoBehaviour
         
     }
 
+    public void OnQuestionUpgradeBtnClick(){
+        if(theDB.inventoryList[theDB.slotCount].Get_weapon_Equip()){
+            //장착중인경우 equiplist에서 가져와야됨.
+            switch(theDB.inventoryList[theDB.slotCount].Get_weapon_Type()){
+                case 1001:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[0]);
+                    theUpgrade.UpdateAfterInfoTextSetZero();
+                    break;
+                case 1002:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[1]);
+                    theUpgrade.UpdateAfterInfoTextSetZero();
+                    break;
+                case 1003:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[2]);
+                    theUpgrade.UpdateAfterInfoTextSetZero();
+                    break;
+                case 1004:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[3]);
+                    theUpgrade.UpdateAfterInfoTextSetZero();
+                    break;
+                case 1005:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[4]);
+                    theUpgrade.UpdateAfterInfoTextSetZero();
+                    break;
+            }
+        }
+        else{
+            theUpgrade.UpdateBeforInfoText(theDB.inventoryList[theDB.slotCount]);
+            theUpgrade.UpdateAfterInfoTextSetZero();
+        }
+    }
 
+    public void OnUpgradeButtonClick(){
+        if(theDB.inventoryList[theDB.slotCount].Get_weapon_Equip()){
+            //장착중인경우 equiplist에서 가져와야됨.
+            switch(theDB.inventoryList[theDB.slotCount].Get_weapon_Type()){
+                case 1001:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[0]);
+                    theUpgrade.Upgrade(theDB.equipWeponList[0]);
+                    theUpgrade.UpdateAfterInfoText(theDB.equipWeponList[0]);
+                    theUpgrade.UpdateArrowImg();
+                    break;
+                case 1002:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[1]);
+                    theUpgrade.Upgrade(theDB.equipWeponList[1]);
+                    theUpgrade.UpdateAfterInfoText(theDB.equipWeponList[1]);
+                    theUpgrade.UpdateArrowImg();
+                    break;
+                case 1003:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[2]);
+                    theUpgrade.Upgrade(theDB.equipWeponList[2]);
+                    theUpgrade.UpdateAfterInfoText(theDB.equipWeponList[2]);
+                    theUpgrade.UpdateArrowImg();
+                    break;
+                case 1004:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[3]);
+                    theUpgrade.Upgrade(theDB.equipWeponList[3]);
+                    theUpgrade.UpdateAfterInfoText(theDB.equipWeponList[3]);
+                    theUpgrade.UpdateArrowImg();
+                    break;
+                case 1005:
+                    theUpgrade.UpdateBeforInfoText(theDB.equipWeponList[4]);
+                    theUpgrade.Upgrade(theDB.equipWeponList[4]);
+                    theUpgrade.UpdateAfterInfoText(theDB.equipWeponList[4]);
+                    theUpgrade.UpdateArrowImg();
+                    break;
+            }
+        }
+        else{
+            theUpgrade.UpdateBeforInfoText(theDB.inventoryList[theDB.slotCount]);
+            theUpgrade.Upgrade(theDB.inventoryList[theDB.slotCount]);
+            theUpgrade.UpdateAfterInfoText(theDB.inventoryList[theDB.slotCount]);
+            theUpgrade.UpdateArrowImg();
+        }
 
-    
+        
+    }
 }
