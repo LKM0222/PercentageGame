@@ -61,4 +61,11 @@ public class PlayerStatus : MonoBehaviour
         return (Playerdmg + SumEquipdmg) * (1 + dmgPercent);
     }
 
+
+    public bool AttackFlag(){
+        if(equip_item_weapon.Get_weapon_Equip()){
+            return true;
+        }
+        else return false;
+    }
 }
