@@ -46,6 +46,7 @@ public class EnemyScript : MonoBehaviour
             dmg.GetComponent<Text>().text = "-" + thePlayer.finalDmg.ToString();
             StartCoroutine(dmg.GetComponent<DmgText>().DmgColorCoroutine());
             StartCoroutine(dmg.GetComponent<DmgText>().DmgPosCoroutine());
+            StartCoroutine(dmg.GetComponent<DmgText>().DestroyCoroutine());
             Destroy(other.gameObject);
             
         }

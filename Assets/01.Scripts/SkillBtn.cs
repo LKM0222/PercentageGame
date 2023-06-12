@@ -8,12 +8,17 @@ public class SkillBtn : MonoBehaviour
     DataBase theDB;
 
     [SerializeField] GameObject skillImgSpawner;
+    [SerializeField] GameObject logSpawner;
+    
     public GameObject skillIcon;
+
+    [SerializeField] GameObject playerlog;
 
     private void Awake()
     {
         theDB = FindObjectOfType<DataBase>();
         skillImgSpawner = GameObject.Find("SkillTimer");
+        logSpawner = GameObject.Find("LogTextSpawner");
     }
     public void OnSkillBtnClikc(){
         //여기서 검색, 리스트에 추가
@@ -29,7 +34,8 @@ public class SkillBtn : MonoBehaviour
         }
         else{
             //스킬 사용중!
-            print("skill is use!");
+            var log = Instantiate(playerlog, logSpawner.transform.position, Quaternion.identity, logSpawner.transform);
+            log.GetComponent<PlayerLog>().CoroutineStart(0);
         }
        
     }

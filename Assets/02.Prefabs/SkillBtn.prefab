@@ -149,7 +149,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillCode: 0
   skillImgSpawner: {fileID: 0}
+  logSpawner: {fileID: 0}
   skillIcon: {fileID: 8191731214519504535, guid: d37307f42cbc34ca3b89da68dbefe42f, type: 3}
+  playerlog: {fileID: 4925250204056642565, guid: 80edad47f40ee47739afc8774683c6f8, type: 3}
 --- !u!1 &4557358836936260256
 GameObject:
   m_ObjectHideFlags: 0

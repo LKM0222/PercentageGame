@@ -1944,7 +1944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200105902}
   m_Layer: 0
-  m_Name: PlayerHp
+  m_Name: PlayerLog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13975,7 +13975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167802515}
   m_Layer: 0
-  m_Name: DmgTextSpawner
+  m_Name: LogTextSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16415,8 +16415,10 @@ MonoBehaviour:
     weapon_Code: 0
     weapon_Type: 0
     weapon_Equip: 0
-  playerLog: {fileID: 0}
-  logs: []
+  playerLog: {fileID: 5298138803724838063, guid: 80edad47f40ee47739afc8774683c6f8, type: 3}
+  playerLogspawner: {fileID: 1167802514}
+  logs:
+  - "\uC774\uBBF8 \uC0AC\uC6A9\uC911\uC778 \uC2A4\uD0AC\uC785\uB2C8\uB2E4!"
 --- !u!1 &1405835492
 GameObject:
   m_ObjectHideFlags: 0
