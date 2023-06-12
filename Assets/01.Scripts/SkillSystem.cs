@@ -34,7 +34,7 @@ public class SkillSystem : MonoBehaviour
         skillSlider.value = t;
         skillTimeText.text = t.ToString("#.0") + "s";
         if(t > skillSlider.maxValue){ //지속시간이 끝난경우
-            //스킬을 리스트에서 제거해야됨... 코드짜기 
+            theDB.skillInUse.Remove(theDB.skillInUse.Find(x => x.Get_Skill_Code() == skill.Get_Skill_Code()));
             Destroy(this.gameObject);
         }
     }
