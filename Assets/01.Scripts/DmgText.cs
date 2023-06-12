@@ -13,7 +13,6 @@ public class DmgText : MonoBehaviour
             this.GetComponent<Text>().color = new Color(textColor.r, textColor.g, textColor.b, i);
             yield return new WaitForSeconds(0.01f);
         } 
-        Destroy(this.gameObject);
     }
     public IEnumerator DmgPosCoroutine(){
         Vector3 textPos = this.GetComponent<RectTransform>().localPosition;
@@ -24,5 +23,8 @@ public class DmgText : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         } 
     }
+    // public IEnumerator DestroyCoroutine(){
+    //     yield return new 
+    // }
 
 }

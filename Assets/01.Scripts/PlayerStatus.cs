@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 //플레이어의 현재 상태 (어떤 장비를 착용중인지, ...)
@@ -23,6 +24,12 @@ public class PlayerStatus : MonoBehaviour
     public Item equip_item_head, equip_item_body, equip_item_pants, equip_item_shoose, equip_item_weapon;
 
     DataBase theDB;
+
+    [SerializeField] Text playerLog;
+
+    //log 순서 : 0:skill error
+    public string[] logs = new string[0];
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,5 +74,26 @@ public class PlayerStatus : MonoBehaviour
             return true;
         }
         else return false;
+    }
+
+    public IEnumerator PlayerLogColorCoroutine(){
+        Color textColor = this.GetComponent<Text>().color;
+        float alpha = 1f;
+        for (float i =1;i > 0f;i -= 0.01f ){
+            alpha -= i;
+            playerLog.GetComponent<Text>().color = new Color(textColor.r, textColor.g, textColor.b, i);
+            yield return new WaitForSeconds(0.01f);
+        } 
+        Destroy(this.gameObject);
+    }
+    public IEnumerator PlayerLogPosCoroutine(string _playerLog){
+        Vector3 textPos = this.GetComponent<RectTransform>().localPosition;
+        playerLog.text = _playerLog;
+        float yPos = 0f;
+        for (float i = 0;i < 3f;i += 0.01f ){
+            yPos += i;
+            playerLog.GetComponent<RectTransform>().localPosition = new Vector3(textPos.x, yPos,textPos.z);
+            yield return new WaitForSeconds(0.01f);
+        } 
     }
 }

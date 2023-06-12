@@ -23,6 +23,9 @@ public class BtnScript : MonoBehaviour
     //upgrade
     UpgradeSystem theUpgrade;
 
+    //skill
+    
+
     private void Awake() {
         theDB = FindObjectOfType<DataBase>();
         theQuestionPopup = FindObjectOfType<QuestionPopup>();
@@ -271,4 +274,7 @@ public class BtnScript : MonoBehaviour
 
         
     }
+
+    
+
 }

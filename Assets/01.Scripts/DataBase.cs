@@ -7,11 +7,13 @@ public class DataBase : MonoBehaviour
 {
     
     public int slotCount; //인벤토리에서 몇번째 아이템인지 
+    public int skillCode;
 
     static public Item nullItem = new Item("",0,0,0,0,0,0,0,0,0,0,0,0,0);
 
     public List<Item> itemList = new List<Item>();
     public List<Enemy> enemyList = new List<Enemy>();
+    public List<Skill> skillList = new List<Skill>();
 
     //inven
     public List<Item> inventoryList = new List<Item>();
@@ -21,7 +23,9 @@ public class DataBase : MonoBehaviour
     //enemy
     
 
-
+    //skill
+    public List<Skill> equipedSkill = new List<Skill>();
+    public List<Skill> skillInUse = new List<Skill>();
 
     private void Update()
     {
