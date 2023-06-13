@@ -35,7 +35,18 @@ public class EnemyScript : MonoBehaviour
         pos = this.transform.position;
         size = new Vector3(this.GetComponent<BoxCollider2D>().bounds.size.x, this.GetComponent<BoxCollider2D>().bounds.size.y, 0);
         hpBar.transform.position = pos + new Vector3(0f, size.y / 2,0f);
+        dmgText.transform.position = hpBar.transform.position + new Vector3(0f, 0.1f,0f);
         hpBar.GetComponent<Slider>().value = hp;
+
+        if(hp < 0){
+            //몬스터가 처치된다면 아이템 드랍 및 경험치, 골드를 획득하게 해야함.
+        }
+
+
+    }
+
+    void DropItem(DropItem _item){
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
