@@ -10177,7 +10177,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 899597176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51085c92fb8164e3ebe865117a1b5b25, type: 3}
+  m_Script: {fileID: 11500000, guid: a494c03bc17c24299bb3620691f926f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerLevel: {fileID: 1492315809}
@@ -11411,7 +11411,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 972343851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1671a12756520461386548bc2a5c5b3f, type: 3}
+  m_Script: {fileID: 11500000, guid: b5e577cbfb47c4a80a1d639add26588f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   skillBtn: {fileID: 4557358836889957849, guid: 9ff4afa7c11f2421c938445a0a971f68, type: 3}
@@ -14807,7 +14807,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1286405321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb0a1cd06d05485ca8071902a2809fa, type: 3}
+  m_Script: {fileID: 11500000, guid: ae3feb7b345c948f7aa5f92d5afdada1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   invenContents: {fileID: 2145408713}
@@ -22888,7 +22888,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2013513263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f91774a9c12474b5ca35a3e30bca0bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: dcfa888bc99c64542b2cff48f74b933a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 2145408713}

@@ -5,15 +5,5 @@ using UnityEngine;
 public class QuestionPopup : MonoBehaviour
 {
     public GameObject content;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
