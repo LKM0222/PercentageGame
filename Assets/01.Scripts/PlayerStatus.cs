@@ -19,7 +19,7 @@ public class PlayerStatus : MonoBehaviour
     public float Atk; //능력치로 결정되는 플레이어의 기본 공격력
     public float defense;
     public float atkSpd; //defalut = 2.5, max = 0.1 (수정할수도 있음)
-
+    public float atkDistance;
     public float playerSpeed;
 
     public float incomePercent, dmgPercent, expPercent;
@@ -27,10 +27,9 @@ public class PlayerStatus : MonoBehaviour
 
     DataBase theDB;
 
-    [SerializeField] GameObject hitObj;
     RaycastHit2D hit;
 
-
+    public LayerMask layer;
 
     // Start is called before the first frame update
     void Start()
@@ -41,16 +40,12 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.DrawRay(this.transform.position, Vector3.right * 3f, Color.green);
-        hit = Physics2D.Raycast(this.transform.position, Vector3.right * 3f);
-        hitObj = hit.transform.GetComponent<GameObject>();
-        if(hit.transform.CompareTag("Enemy")){
-            print("notEnemy");
+        hit = Physics2D.Raycast(this.transform.position, Vector3.right * 3f,atkDistance,layer);
+        if(!hit){//Enemy를 감지하지 않은 경우만 이동
             this.transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
+            print("hit is null");
         }
-        else{
-            print("enemy");
-        }
+        
 
         equip_item_head = theDB.equipWeponList[0];
         equip_item_body = theDB.equipWeponList[1];

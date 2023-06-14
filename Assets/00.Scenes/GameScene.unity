@@ -10762,7 +10762,7 @@ GameObject:
   - component: {fileID: 944121151}
   - component: {fileID: 944121152}
   - component: {fileID: 944121153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -16433,6 +16433,9 @@ MonoBehaviour:
     weapon_Type: 0
     weapon_Equip: 0
   hitObj: {fileID: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!61 &1404080532
 BoxCollider2D:
   m_ObjectHideFlags: 0
