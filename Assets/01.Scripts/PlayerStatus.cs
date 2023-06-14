@@ -20,10 +20,16 @@ public class PlayerStatus : MonoBehaviour
     public float defense;
     public float atkSpd; //defalut = 2.5, max = 0.1 (수정할수도 있음)
 
+    public float playerSpeed;
+
     public float incomePercent, dmgPercent, expPercent;
     public Item equip_item_head, equip_item_body, equip_item_pants, equip_item_shoose, equip_item_weapon;
 
     DataBase theDB;
+
+    [SerializeField] GameObject hitObj;
+    RaycastHit2D hit;
+
 
 
     // Start is called before the first frame update
@@ -35,6 +41,17 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.DrawRay(this.transform.position, Vector3.right * 3f, Color.green);
+        hit = Physics2D.Raycast(this.transform.position, Vector3.right * 3f);
+        hitObj = hit.transform.GetComponent<GameObject>();
+        if(hit.transform.CompareTag("Enemy")){
+            print("notEnemy");
+            this.transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
+        }
+        else{
+            print("enemy");
+        }
+
         equip_item_head = theDB.equipWeponList[0];
         equip_item_body = theDB.equipWeponList[1];
         equip_item_pants = theDB.equipWeponList[2];

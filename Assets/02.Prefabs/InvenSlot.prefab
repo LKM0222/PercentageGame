@@ -144,16 +144,16 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: New Text
 --- !u!1 &5808757152630308945
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5808757152630308945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac2cb093b0ca34876ad1e0ee1079dee8, type: 3}
+  m_Script: {fileID: 11500000, guid: a44432e30b20041228bec8d679cd4f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
@@ -217,6 +217,8 @@ MonoBehaviour:
     weapon_Name: 
     weapon_Img: {fileID: 0}
     weapon_Dmg: 0
+    weapon_Def: 0
+    weapon_AtkSpd: 0
     weapon_IncomePercent: 0
     weapon_DmgPercent: 0
     weapon_ExpPercent: 0
@@ -377,6 +379,8 @@ MonoBehaviour:
   logScrollview: {fileID: 0}
   statScrollview: {fileID: 0}
   statInfo: {fileID: 0}
+  upgradePopup: {fileID: 0}
+  theWarningPopup: {fileID: 0}
 --- !u!1 &5808757153821548873
 GameObject:
   m_ObjectHideFlags: 0

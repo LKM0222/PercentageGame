@@ -5,10 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class Map
 {
+    [SerializeField] string mapName;
     [SerializeField] int mapCode;
     [SerializeField] List<Enemy> map_enemy_list = new List<Enemy>();
 
-    public Map(int _code){
+    public Map(string _name,int _code){
+        mapName = _name;
         mapCode = _code;
     }
 
