@@ -7,6 +7,8 @@ public class MapScript : MonoBehaviour
     public Map map;
 
     [SerializeField] List<GameObject> enemySpawn = new List<GameObject>();
+    [SerializeField] GameObject enemyPrefab;
+    //GameObject enemyHPbar;
 
     MapSystem theMapSystem;
 
@@ -14,11 +16,11 @@ public class MapScript : MonoBehaviour
     void Start()
     {
         theMapSystem = FindObjectOfType<MapSystem>();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for(int i = 0;i<enemySpawn.Count;i++){
+            var enemy = Instantiate(enemyPrefab,enemySpawn[i].transform.position, Quaternion.identity, enemySpawn[i].transform);
+            enemy.GetComponent<EnemyScript>().theEnemy = map.Random_Enemy_Retrun();
+            
+        }
     }
 }

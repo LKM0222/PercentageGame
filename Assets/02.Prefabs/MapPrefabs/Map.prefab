@@ -160,12 +160,99 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   map:
-    mapName: 
-    mapCode: 0
-    map_enemy_list: []
+    mapName: "\uD3C9\uC6D01"
+    mapCode: 4001001
+    map_enemy_list:
+    - enemy_name: Tree
+      enemy_Img: {fileID: 21300000, guid: 1f0319341769f4769b0116eaf29102a2, type: 3}
+      enemy_code: 3001001
+      enemy_hp: 3000
+      enemy_coin: 30
+      enemy_exp: 100
+      dropItems:
+      - item:
+          weapon_Name: "\uD22C\uAD6C"
+          weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
+          weapon_Dmg: 100
+          weapon_Def: 100
+          weapon_AtkSpd: 0
+          weapon_IncomePercent: 0
+          weapon_DmgPercent: 0
+          weapon_ExpPercent: 0
+          weapon_Price: 100
+          weapon_UpgradeCost: 0
+          weapon_Level: 1
+          weapon_MaxLevel: 20
+          weapon_Rank: 0
+          weapon_Code: 200101
+          weapon_Type: 1001
+          weapon_Equip: 0
+        percent: 0.5
+      - item:
+          weapon_Name: "\uAC11\uC637"
+          weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
+          weapon_Dmg: 100
+          weapon_Def: 0
+          weapon_AtkSpd: 0
+          weapon_IncomePercent: 0.1
+          weapon_DmgPercent: 1
+          weapon_ExpPercent: 1
+          weapon_Price: 100
+          weapon_UpgradeCost: 0
+          weapon_Level: 1
+          weapon_MaxLevel: 20
+          weapon_Rank: 0
+          weapon_Code: 200201
+          weapon_Type: 1002
+          weapon_Equip: 0
+        percent: 0.5
+    - enemy_name: Snail
+      enemy_Img: {fileID: 21300000, guid: e2e75cc1c4a254c7bb8922708f178556, type: 3}
+      enemy_code: 3001002
+      enemy_hp: 5000
+      enemy_coin: 50
+      enemy_exp: 150
+      dropItems:
+      - item:
+          weapon_Name: "\uD22C\uAD6C"
+          weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
+          weapon_Dmg: 100
+          weapon_Def: 100
+          weapon_AtkSpd: 0
+          weapon_IncomePercent: 0
+          weapon_DmgPercent: 0
+          weapon_ExpPercent: 0
+          weapon_Price: 100
+          weapon_UpgradeCost: 0
+          weapon_Level: 1
+          weapon_MaxLevel: 20
+          weapon_Rank: 0
+          weapon_Code: 200101
+          weapon_Type: 1001
+          weapon_Equip: 0
+        percent: 0.2
+      - item:
+          weapon_Name: "\uAC11\uC637"
+          weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
+          weapon_Dmg: 100
+          weapon_Def: 0
+          weapon_AtkSpd: 0
+          weapon_IncomePercent: 0.1
+          weapon_DmgPercent: 1
+          weapon_ExpPercent: 1
+          weapon_Price: 100
+          weapon_UpgradeCost: 0
+          weapon_Level: 1
+          weapon_MaxLevel: 20
+          weapon_Rank: 0
+          weapon_Code: 200201
+          weapon_Type: 1002
+          weapon_Equip: 0
+        percent: 0.8
   enemySpawn:
   - {fileID: 5523324007613438360}
   - {fileID: 5523324007900891376}
+  enemyPrefab: {fileID: 6858914589821642513, guid: 9fd4e3d1984ef4571b2a23fc70d32a1c, type: 3}
 --- !u!61 &5523324007248417662
 BoxCollider2D:
   m_ObjectHideFlags: 0

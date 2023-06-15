@@ -24,4 +24,8 @@ public class Map
     public void Add_EnemyList(Enemy _enemy){
         map_enemy_list.Add(_enemy);
     }
+
+    public Enemy Random_Enemy_Retrun(){
+        return map_enemy_list[Random.Range(0,map_enemy_list.Count)];
+    }
 }

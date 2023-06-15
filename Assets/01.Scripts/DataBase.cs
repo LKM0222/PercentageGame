@@ -27,6 +27,9 @@ public class DataBase : MonoBehaviour
     public List<Skill> equipedSkill = new List<Skill>();
     public List<Skill> skillInUse = new List<Skill>();
 
+
+    //log
+    public List<GameObject> logList = new List<GameObject>();
     private void Update()
     {
         ItemUpdate();
