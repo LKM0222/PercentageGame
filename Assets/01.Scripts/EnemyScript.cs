@@ -36,6 +36,8 @@ public class EnemyScript : MonoBehaviour
         hpBar.GetComponent<RectTransform>().localScale = new Vector3(this.gameObject.GetComponent<BoxCollider2D>().size.x * 1.2f,1f,1f);
         hp = theEnemy.Get_enemy_hp();
 
+        GetComponent<SpriteRenderer>().sprite = theEnemy.Get_enemy_Img();
+
         
     }
 
@@ -50,11 +52,13 @@ public class EnemyScript : MonoBehaviour
 
         if(hp < 0){
             //몬스터가 처치된다면 아이템 드랍 및 경험치, 골드를 획득하게 해야함.
+            theDB.spawnEnemyList.RemoveAt(0);
             thePlayer.playerCoin += theEnemy.Get_enemy_coin();
             thePlayer.playerExp += theEnemy.Get_enemy_exp();
             var log = Instantiate(logPrefabs,logParents.transform.position, Quaternion.identity, logParents.transform);
             log.GetComponent<LogSystem>().logImg.sprite = log.GetComponent<LogSystem>().logIcon[0];
             log.GetComponent<LogSystem>().logText.text = theEnemy.Get_enemy_name() + "을(를) 처치하였습니다! \n";
+            
             Destroy(hppre);
             Destroy(this.gameObject);
             

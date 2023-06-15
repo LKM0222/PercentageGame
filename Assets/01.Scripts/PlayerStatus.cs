@@ -31,6 +31,8 @@ public class PlayerStatus : MonoBehaviour
 
     public LayerMask layer;
 
+    public bool atkFlag = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +45,10 @@ public class PlayerStatus : MonoBehaviour
         hit = Physics2D.Raycast(this.transform.position, Vector3.right * 3f,atkDistance,layer);
         if(!hit){//Enemy를 감지하지 않은 경우만 이동
             this.transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
-            print("hit is null");
+            atkFlag = false;
+        }
+        else{
+            atkFlag = true;
         }
         
 
@@ -77,7 +82,7 @@ public class PlayerStatus : MonoBehaviour
     }
 
 
-    public bool AttackFlag(){
+    public bool PlayerEquipFlag(){
         if(equip_item_weapon.Get_weapon_Equip()){
             return true;
         }

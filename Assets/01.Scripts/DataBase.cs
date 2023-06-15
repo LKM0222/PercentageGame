@@ -21,7 +21,7 @@ public class DataBase : MonoBehaviour
     
     
     //enemy
-    
+    public List<Enemy> spawnEnemyList = new List<Enemy>();
 
     //skill
     public List<Skill> equipedSkill = new List<Skill>();
@@ -30,9 +30,22 @@ public class DataBase : MonoBehaviour
 
     //log
     public List<GameObject> logList = new List<GameObject>();
+    
+    public static DataBase Instance;
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Update()
     {
-        ItemUpdate();
+        ItemUpdate();        
     }
     public void ItemUpdate(){
         //인벤토리에서 장착된 아이템은 아이템 타입 코드를 불러와서 이큅에 적용해야됨...

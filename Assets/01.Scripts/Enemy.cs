@@ -40,6 +40,9 @@ public class Enemy
     public int Get_enemy_exp(){
         return enemy_exp;
     }
+    public Sprite Get_enemy_Img(){
+        return enemy_Img;
+    }
 
     //setter
     public void Set_enemy_hp(int _hp){

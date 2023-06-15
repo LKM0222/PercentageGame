@@ -20,7 +20,7 @@ public class AttackSpawner : MonoBehaviour
     {
         t += Time.deltaTime;
         attackTime = thePlayer.atkSpd;
-        if(attackTime < t && thePlayer.AttackFlag()){
+        if(attackTime < t && thePlayer.PlayerEquipFlag() && thePlayer.atkFlag){
             Instantiate(attackPrefabs,this.transform.position, Quaternion.identity,this.transform);
             t = 0f;
         }

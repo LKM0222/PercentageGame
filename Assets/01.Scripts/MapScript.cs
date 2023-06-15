@@ -11,16 +11,20 @@ public class MapScript : MonoBehaviour
     //GameObject enemyHPbar;
 
     MapSystem theMapSystem;
+    DataBase theDB;
+
 
     // Start is called before the first frame update
     void Start()
     {
         theMapSystem = FindObjectOfType<MapSystem>();
+        theDB = FindObjectOfType<DataBase>();
 
         for(int i = 0;i<enemySpawn.Count;i++){
             var enemy = Instantiate(enemyPrefab,enemySpawn[i].transform.position, Quaternion.identity, enemySpawn[i].transform);
             enemy.GetComponent<EnemyScript>().theEnemy = map.Random_Enemy_Retrun();
-            
+            enemy.AddComponent<BoxCollider2D>();
+            theDB.spawnEnemyList.Add(enemy.GetComponent<EnemyScript>().theEnemy);
         }
     }
 }
