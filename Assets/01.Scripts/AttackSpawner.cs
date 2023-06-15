@@ -9,17 +9,19 @@ public class AttackSpawner : MonoBehaviour
     float t;
 
     PlayerStatus thePlayer;
+    DataBase theDB;
     // Start is called before the first frame update
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerStatus>();
+        theDB = FindObjectOfType<DataBase>();
     }
 
     // Update is called once per frame
     void Update()
     {
         t += Time.deltaTime;
-        attackTime = thePlayer.atkSpd;
+        attackTime = theDB.atkSpd;
         if(attackTime < t && thePlayer.PlayerEquipFlag() && thePlayer.atkFlag){
             Instantiate(attackPrefabs,this.transform.position, Quaternion.identity,this.transform);
             t = 0f;

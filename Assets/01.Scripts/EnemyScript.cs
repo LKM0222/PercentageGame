@@ -53,8 +53,8 @@ public class EnemyScript : MonoBehaviour
         if(hp < 0){
             //몬스터가 처치된다면 아이템 드랍 및 경험치, 골드를 획득하게 해야함.
             theDB.spawnEnemyList.RemoveAt(0);
-            thePlayer.playerCoin += theEnemy.Get_enemy_coin();
-            thePlayer.playerExp += theEnemy.Get_enemy_exp();
+            theDB.playerCoin += theEnemy.Get_enemy_coin();
+            theDB.playerExp += theEnemy.Get_enemy_exp();
             var log = Instantiate(logPrefabs,logParents.transform.position, Quaternion.identity, logParents.transform);
             log.GetComponent<LogSystem>().logImg.sprite = log.GetComponent<LogSystem>().logIcon[0];
             log.GetComponent<LogSystem>().logText.text = theEnemy.Get_enemy_name() + "을(를) 처치하였습니다! \n";
@@ -74,9 +74,9 @@ public class EnemyScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.transform.tag == "Attack"){
-            hp -= thePlayer.finalDmg;
+            hp -= theDB.finalDmg;
             var dmg = Instantiate(dmgText,dmgSpawner.transform.position, Quaternion.identity,dmgSpawner.transform);
-            dmg.GetComponent<Text>().text = "-" + thePlayer.finalDmg.ToString();
+            dmg.GetComponent<Text>().text = "-" + theDB.finalDmg.ToString();
             StartCoroutine(dmg.GetComponent<DmgText>().DmgColorCoroutine());
             StartCoroutine(dmg.GetComponent<DmgText>().DmgPosCoroutine());
             StartCoroutine(dmg.GetComponent<DmgText>().DestroyCoroutine());

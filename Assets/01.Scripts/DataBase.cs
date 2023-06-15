@@ -6,31 +6,56 @@ using UnityEngine.UI;
 public class DataBase : MonoBehaviour
 {
     
-    public int slotCount; //인벤토리에서 몇번째 아이템인지 
-    public int skillCode;
-
-    static public Item nullItem = new Item("",0,0,0,0,0,0,0,0,0,0,0,0,0);
+    
 
     public List<Item> itemList = new List<Item>();
     public List<Enemy> enemyList = new List<Enemy>();
     public List<Skill> skillList = new List<Skill>();
 
     //inven
+    [Header("Inventory")]
     public List<Item> inventoryList = new List<Item>();
     public Item[] equipWeponList = new Item[5];
     
     
     //enemy
+    [Header("Enemy")]
     public List<Enemy> spawnEnemyList = new List<Enemy>();
 
     //skill
+    [Header("Skill")]
     public List<Skill> equipedSkill = new List<Skill>();
     public List<Skill> skillInUse = new List<Skill>();
 
 
     //log
+    [Header("Log")]
     public List<GameObject> logList = new List<GameObject>();
-    
+
+    //scene
+    [Header("Scene")]
+    public int sceneCode;
+
+    //player
+    [Header("Player")]
+    public int playerLevel, playerRank;
+    public int playerExp, playerMaxExp;
+    public int playerCoin;
+    public float finalDmg;
+    public float Atk; //능력치로 결정되는 플레이어의 기본 공격력
+    public float defense;
+    public float atkSpd; //defalut = 2.5, max = 0.1 (수정할수도 있음)
+    public float atkDistance;
+    public float playerSpeed;
+    public float incomePercent, dmgPercent, expPercent;
+    public Item equip_item_head, equip_item_body, equip_item_pants, equip_item_shoose, equip_item_weapon;
+
+    [Header("ETC")]
+    public int slotCount; //인벤토리에서 몇번째 아이템인지 
+    public int skillCode;
+
+    static public Item nullItem = new Item("",0,0,0,0,0,0,0,0,0,0,0,0,0);
+
     public static DataBase Instance;
     private void Awake()
     {

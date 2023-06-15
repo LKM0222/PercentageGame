@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BtnScript : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class BtnScript : MonoBehaviour
     UpgradeSystem theUpgrade;
 
     //skill
+
+    //Scene
+    public int sceneCode;
     
 
     private void Awake() {
@@ -164,23 +168,23 @@ public class BtnScript : MonoBehaviour
         Item item = theDB.inventoryList[theDB.slotCount]; //선택한 아이템
         switch(item.Get_weapon_Type()){
             case 1001:
-                thePlayer.equip_item_head = DataBase.nullItem;
+                theDB.equip_item_head = DataBase.nullItem;
                 theDB.equipWeponList[0] = DataBase.nullItem;
                 break;
             case 1002:
-                thePlayer.equip_item_body = DataBase.nullItem;
+                theDB.equip_item_body = DataBase.nullItem;
                 theDB.equipWeponList[1] = DataBase.nullItem;
                 break;
             case 1003:
-                thePlayer.equip_item_pants = DataBase.nullItem;
+                theDB.equip_item_pants = DataBase.nullItem;
                 theDB.equipWeponList[2] = DataBase.nullItem;
                 break;
             case 1004:
-                thePlayer.equip_item_shoose = DataBase.nullItem;
+                theDB.equip_item_shoose = DataBase.nullItem;
                 theDB.equipWeponList[3] = DataBase.nullItem;
                 break;
             case 1005:
-                thePlayer.equip_item_weapon = DataBase.nullItem;
+                theDB.equip_item_weapon = DataBase.nullItem;
                 theDB.equipWeponList[4] = DataBase.nullItem;
                 break;
         }
@@ -275,6 +279,9 @@ public class BtnScript : MonoBehaviour
         
     }
 
-    
+    public void OnStageBtnClikc(){
+        theDB.sceneCode = sceneCode;
+        SceneManager.LoadScene("GameScene");
+    }
 
 }

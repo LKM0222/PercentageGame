@@ -791,6 +791,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &86581173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,6 +3870,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &366004808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4218,7 +4220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -416.15756}
+  m_AnchoredPosition: {x: -0.000061035156, y: -416.1892}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &399351779
@@ -5479,6 +5481,7 @@ MonoBehaviour:
   statInfo: {fileID: 533990410}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5729,6 +5732,7 @@ MonoBehaviour:
   statInfo: {fileID: 533990410}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &533990408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6987,6 +6991,7 @@ MonoBehaviour:
   statInfo: {fileID: 533990410}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &703016741
 GameObject:
   m_ObjectHideFlags: 0
@@ -8509,7 +8514,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1110261506}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.98281825
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8893,6 +8898,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!114 &863224746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12137,6 +12143,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &1083733624
 GameObject:
   m_ObjectHideFlags: 0
@@ -15249,105 +15256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09332703a92e94454bf5d3ce11f530d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLevel: 1
-  playerRank: 1
-  playerExp: 0
-  playerMaxExp: 100000
-  playerCoin: 0
-  finalDmg: 0
-  Atk: 10
-  defense: 10
-  atkSpd: 2.5
-  atkDistance: 3
-  playerSpeed: 2
-  incomePercent: 0
-  dmgPercent: 0
-  expPercent: 0
-  equip_item_head:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_body:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_pants:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_shoose:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_weapon:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
   layer:
     serializedVersion: 2
     m_Bits: 256
@@ -15979,13 +15887,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477445065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008ac7c6d0fed407bab91e334c9fd11b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotCount: 0
-  skillCode: 0
   itemList:
   - weapon_Name: "\uD22C\uAD6C"
     weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
@@ -16411,6 +16317,108 @@ MonoBehaviour:
     skillImg: {fileID: 21300000, guid: 84da140438ffc476a9afcecfcd715b1b, type: 3}
   skillInUse: []
   logList: []
+  sceneCode: 0
+  playerLevel: 0
+  playerRank: 0
+  playerExp: 0
+  playerMaxExp: 0
+  playerCoin: 0
+  finalDmg: 0
+  Atk: 0
+  defense: 0
+  atkSpd: 0
+  atkDistance: 0
+  playerSpeed: 0
+  incomePercent: 0
+  dmgPercent: 0
+  expPercent: 0
+  equip_item_head:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_Def: 0
+    weapon_AtkSpd: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_body:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_Def: 0
+    weapon_AtkSpd: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_pants:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_Def: 0
+    weapon_AtkSpd: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_shoose:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_Def: 0
+    weapon_AtkSpd: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  equip_item_weapon:
+    weapon_Name: 
+    weapon_Img: {fileID: 0}
+    weapon_Dmg: 0
+    weapon_Def: 0
+    weapon_AtkSpd: 0
+    weapon_IncomePercent: 0
+    weapon_DmgPercent: 0
+    weapon_ExpPercent: 0
+    weapon_Price: 0
+    weapon_UpgradeCost: 0
+    weapon_Level: 0
+    weapon_MaxLevel: 0
+    weapon_Rank: 0
+    weapon_Code: 0
+    weapon_Type: 0
+    weapon_Equip: 0
+  slotCount: 0
+  skillCode: 0
 --- !u!4 &1477445067
 Transform:
   m_ObjectHideFlags: 0
@@ -18421,6 +18429,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 1912453767}
+  sceneCode: 0
 --- !u!114 &1672850444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18719,6 +18728,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!114 &1709652090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20426,6 +20436,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &1891698756
 GameObject:
   m_ObjectHideFlags: 0
@@ -20718,6 +20729,7 @@ MonoBehaviour:
   statInfo: {fileID: 0}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!114 &1934124100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21565,6 +21577,7 @@ MonoBehaviour:
   statInfo: {fileID: 533990410}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &1993829611
 GameObject:
   m_ObjectHideFlags: 0
@@ -22490,6 +22503,7 @@ MonoBehaviour:
   statInfo: {fileID: 533990410}
   upgradePopup: {fileID: 0}
   theWarningPopup: {fileID: 0}
+  sceneCode: 0
 --- !u!1 &2060930219
 GameObject:
   m_ObjectHideFlags: 0

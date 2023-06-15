@@ -29,7 +29,7 @@ public class EquipSlotInfo : MonoBehaviour
                 }
                 else {
                     slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
-                    slotImg.sprite = thePlayerStatus.equip_item_head.Get_weapon_Img();
+                    slotImg.sprite = theDB.equip_item_head.Get_weapon_Img();
                 }
                 break;
 
@@ -39,7 +39,7 @@ public class EquipSlotInfo : MonoBehaviour
                 }
                 else {
                     slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
-                    slotImg.sprite = thePlayerStatus.equip_item_body.Get_weapon_Img();
+                    slotImg.sprite = theDB.equip_item_body.Get_weapon_Img();
                 }
                 break;
 
@@ -49,7 +49,7 @@ public class EquipSlotInfo : MonoBehaviour
                 }
                 else {
                     slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
-                    slotImg.sprite = thePlayerStatus.equip_item_pants.Get_weapon_Img();
+                    slotImg.sprite = theDB.equip_item_pants.Get_weapon_Img();
                 }
                 break;
 
@@ -59,7 +59,7 @@ public class EquipSlotInfo : MonoBehaviour
                 }
                 else {
                     slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
-                    slotImg.sprite = thePlayerStatus.equip_item_shoose.Get_weapon_Img();
+                    slotImg.sprite = theDB.equip_item_shoose.Get_weapon_Img();
                 }
                 break;
 
@@ -69,7 +69,7 @@ public class EquipSlotInfo : MonoBehaviour
                 }
                 else {
                     slotImg.GetComponent<Image>().color = new Color(1f,1f,1f,1f);
-                    slotImg.sprite = thePlayerStatus.equip_item_weapon.Get_weapon_Img();
+                    slotImg.sprite = theDB.equip_item_weapon.Get_weapon_Img();
                 }
                 break;
         }
