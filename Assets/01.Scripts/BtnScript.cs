@@ -281,7 +281,7 @@ public class BtnScript : MonoBehaviour
 
     public void OnStageBtnClikc(){
         theDB.sceneCode = sceneCode;
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("LoadingScene");
     }
 
 }
