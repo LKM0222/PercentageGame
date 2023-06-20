@@ -9,13 +9,20 @@ public class Skill
     [SerializeField] int skillCode;
     [SerializeField] float skillTime;
     [SerializeField] Sprite skillImg;
+    [SerializeField] bool skillEquip;
+    [SerializeField] bool skillLearn;
+    [SerializeField] int skillUpgradeCost;
+
     //effect아직 추가 x
     
-    public Skill(string _name, string _info, int _code, float _time){
+    public Skill(string _name, string _info, int _code, float _time,bool _equip, bool _learn, int _upgradeCost){
         skillName = _name;
         skillInfo = _info;
         skillCode = _code;
         skillTime = _time;
+        skillEquip = _equip;
+        skillLearn = _learn;
+        skillUpgradeCost = _upgradeCost;
     }
 
     //getter
@@ -35,6 +42,18 @@ public class Skill
         return skillImg;
     }
 
+    public bool Get_Skill_Equip(){
+        return skillEquip;
+    }
+
+    public bool Get_Skill_Learn(){
+        return skillLearn;
+    }
+
+    public int Get_Skill_UpgradeCost(){
+        return skillUpgradeCost;
+    }
+
 
     //setter
     public void Set_Skill_Name(string _name){
@@ -48,5 +67,17 @@ public class Skill
     }
     public void Set_Skill_Time(float _time){
         skillTime = _time;
+    }
+
+    public void Set_Skill_Equip(bool _equip){
+        skillEquip = _equip;
+    }
+
+    public void Set_Skill_Learn(bool _learn){
+        skillLearn = _learn;
+    }
+
+    public void Set_Skill_UpgradeCost(int _cost){
+        skillUpgradeCost = _cost;
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//스킬을 사용 했을때 타이머 기능 및 사용중 스킬 슬롯에 추가하는 기능
+
 public class SkillSystem : MonoBehaviour
 {
     [SerializeField] Slider skillSlider;

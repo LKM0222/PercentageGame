@@ -10,7 +10,6 @@ public class DataBase : MonoBehaviour
 
     public List<Item> itemList = new List<Item>();
     public List<Enemy> enemyList = new List<Enemy>();
-    public List<Skill> skillList = new List<Skill>();
 
     //inven
     [Header("Inventory")]
@@ -24,6 +23,7 @@ public class DataBase : MonoBehaviour
 
     //skill
     [Header("Skill")]
+    public List<Skill> skillList = new List<Skill>();
     public List<Skill> equipedSkill = new List<Skill>();
     public List<Skill> skillInUse = new List<Skill>();
 
