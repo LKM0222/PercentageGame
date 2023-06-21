@@ -4099,7 +4099,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388343952
 GameObject:
@@ -4304,7 +4304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -416.19}
+  m_AnchoredPosition: {x: -0.000061035156, y: -416.18976}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &399351779
@@ -6410,6 +6410,7 @@ MonoBehaviour:
     skillInfo: 
     skillCode: 0
     skillTime: 0
+    skillLevel: 0
     skillImg: {fileID: 0}
     skillEquip: 0
     skillLearn: 0
@@ -8399,6 +8400,7 @@ MonoBehaviour:
     skillInfo: 
     skillCode: 0
     skillTime: 0
+    skillLevel: 0
     skillImg: {fileID: 0}
     skillEquip: 0
     skillLearn: 0
@@ -9010,8 +9012,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1110261507}
   m_HandleRect: {fileID: 1110261506}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99953324
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10699,6 +10701,7 @@ MonoBehaviour:
     skillInfo: 
     skillCode: 0
     skillTime: 0
+    skillLevel: 0
     skillImg: {fileID: 0}
     skillEquip: 0
     skillLearn: 0
@@ -10946,6 +10949,7 @@ MonoBehaviour:
     skillInfo: 
     skillCode: 0
     skillTime: 0
+    skillLevel: 0
     skillImg: {fileID: 0}
     skillEquip: 0
     skillLearn: 0
@@ -15929,7 +15933,7 @@ Transform:
   m_Children:
   - {fileID: 723636718}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1404080531
 MonoBehaviour:
@@ -16230,615 +16234,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443324200}
   m_CullTransparentMesh: 1
---- !u!1 &1477445065
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1477445067}
-  - component: {fileID: 1477445066}
-  m_Layer: 0
-  m_Name: Database
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1477445066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477445065}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 008ac7c6d0fed407bab91e334c9fd11b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemList:
-  - weapon_Name: "\uD22C\uAD6C"
-    weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
-    weapon_Dmg: 70
-    weapon_Def: 120
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.01
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0.03
-    weapon_Price: 150
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 10
-    weapon_Rank: 2
-    weapon_Code: 2001002
-    weapon_Type: 1001
-    weapon_Equip: 0
-  - weapon_Name: "\uAC11\uC637"
-    weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
-    weapon_Dmg: 150
-    weapon_Def: 300
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0.001
-    weapon_Price: 1000
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 10
-    weapon_Rank: 2
-    weapon_Code: 2002002
-    weapon_Type: 1002
-    weapon_Equip: 0
-  - weapon_Name: "\uBC14\uC9C0"
-    weapon_Img: {fileID: 21300000, guid: 1ee20ddd5bfe9452491d3045379f0da2, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 200
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.005
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0.01
-    weapon_Price: 400
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 10
-    weapon_Rank: 2
-    weapon_Code: 2003002
-    weapon_Type: 1003
-    weapon_Equip: 0
-  - weapon_Name: "\uC2E0\uBC1C"
-    weapon_Img: {fileID: 21300000, guid: b75564908983c45679934b280f80e130, type: 3}
-    weapon_Dmg: 70
-    weapon_Def: 80
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.02
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0.02
-    weapon_Price: 300
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 10
-    weapon_Rank: 2
-    weapon_Code: 2004002
-    weapon_Type: 1004
-    weapon_Equip: 0
-  - weapon_Name: "\uBB34\uAE30"
-    weapon_Img: {fileID: 21300000, guid: 7bd841822e5334b738a8a9862ba24f45, type: 3}
-    weapon_Dmg: 500
-    weapon_Def: 70
-    weapon_AtkSpd: 0.2
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0.02
-    weapon_ExpPercent: 0.1
-    weapon_Price: 1500
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 15
-    weapon_Rank: 2
-    weapon_Code: 2005002
-    weapon_Type: 1005
-    weapon_Equip: 0
-  - weapon_Name: test
-    weapon_Img: {fileID: 21300000, guid: 9c1b7424cca7f4c2ea11ea16f0ce02ff, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 1
-    weapon_Code: 200000
-    weapon_Type: 0
-    weapon_Equip: 0
-  - weapon_Name: "\uAE30\uBCF8\uBB34\uAE30"
-    weapon_Img: {fileID: 21300000, guid: d8f9844ed42cc4dd695f698d05d62209, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 1
-    weapon_Code: 200501
-    weapon_Type: 1005
-    weapon_Equip: 1
-  enemyList:
-  - enemy_name: Tree
-    enemy_Img: {fileID: 21300000, guid: 1f0319341769f4769b0116eaf29102a2, type: 3}
-    enemy_code: 3001001
-    enemy_hp: 3000
-    enemy_coin: 30
-    enemy_exp: 100
-    dropItems:
-    - item:
-        weapon_Name: "\uD22C\uAD6C"
-        weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
-        weapon_Dmg: 100
-        weapon_Def: 100
-        weapon_AtkSpd: 0
-        weapon_IncomePercent: 0
-        weapon_DmgPercent: 0
-        weapon_ExpPercent: 0
-        weapon_Price: 100
-        weapon_UpgradeCost: 0
-        weapon_Level: 1
-        weapon_MaxLevel: 20
-        weapon_Rank: 0
-        weapon_Code: 200101
-        weapon_Type: 1001
-        weapon_Equip: 0
-      percent: 0.5
-    - item:
-        weapon_Name: "\uAC11\uC637"
-        weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
-        weapon_Dmg: 100
-        weapon_Def: 0
-        weapon_AtkSpd: 0
-        weapon_IncomePercent: 0.1
-        weapon_DmgPercent: 1
-        weapon_ExpPercent: 1
-        weapon_Price: 100
-        weapon_UpgradeCost: 0
-        weapon_Level: 1
-        weapon_MaxLevel: 20
-        weapon_Rank: 0
-        weapon_Code: 200201
-        weapon_Type: 1002
-        weapon_Equip: 0
-      percent: 0.5
-  - enemy_name: Snail
-    enemy_Img: {fileID: 21300000, guid: e2e75cc1c4a254c7bb8922708f178556, type: 3}
-    enemy_code: 3001002
-    enemy_hp: 5000
-    enemy_coin: 50
-    enemy_exp: 150
-    dropItems:
-    - item:
-        weapon_Name: "\uD22C\uAD6C"
-        weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
-        weapon_Dmg: 100
-        weapon_Def: 100
-        weapon_AtkSpd: 0
-        weapon_IncomePercent: 0
-        weapon_DmgPercent: 0
-        weapon_ExpPercent: 0
-        weapon_Price: 100
-        weapon_UpgradeCost: 0
-        weapon_Level: 1
-        weapon_MaxLevel: 20
-        weapon_Rank: 0
-        weapon_Code: 200101
-        weapon_Type: 1001
-        weapon_Equip: 0
-      percent: 0.2
-    - item:
-        weapon_Name: "\uAC11\uC637"
-        weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
-        weapon_Dmg: 100
-        weapon_Def: 0
-        weapon_AtkSpd: 0
-        weapon_IncomePercent: 0.1
-        weapon_DmgPercent: 1
-        weapon_ExpPercent: 1
-        weapon_Price: 100
-        weapon_UpgradeCost: 0
-        weapon_Level: 1
-        weapon_MaxLevel: 20
-        weapon_Rank: 0
-        weapon_Code: 200201
-        weapon_Type: 1002
-        weapon_Equip: 0
-      percent: 0.8
-  inventoryList:
-  - weapon_Name: "\uD22C\uAD6C"
-    weapon_Img: {fileID: 21300000, guid: 7da46b3eda98a4ae0b77ff4555ee6923, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 100
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 0
-    weapon_Code: 200101
-    weapon_Type: 1001
-    weapon_Equip: 0
-  - weapon_Name: "\uAC11\uC637"
-    weapon_Img: {fileID: 21300000, guid: 49a2d45e9efdd43d79d89516e8f4b192, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 0
-    weapon_Code: 200201
-    weapon_Type: 1002
-    weapon_Equip: 0
-  - weapon_Name: "\uBC14\uC9C0"
-    weapon_Img: {fileID: 21300000, guid: 1ee20ddd5bfe9452491d3045379f0da2, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 0
-    weapon_Code: 200301
-    weapon_Type: 1003
-    weapon_Equip: 0
-  - weapon_Name: "\uC2E0\uBC1C"
-    weapon_Img: {fileID: 21300000, guid: b75564908983c45679934b280f80e130, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 0
-    weapon_Code: 200401
-    weapon_Type: 1004
-    weapon_Equip: 0
-  - weapon_Name: "\uBB34\uAE30"
-    weapon_Img: {fileID: 21300000, guid: 7bd841822e5334b738a8a9862ba24f45, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 0
-    weapon_Code: 200502
-    weapon_Type: 1005
-    weapon_Equip: 0
-  - weapon_Name: test
-    weapon_Img: {fileID: 21300000, guid: 9c1b7424cca7f4c2ea11ea16f0ce02ff, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 2
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 1
-    weapon_Code: 200000
-    weapon_Type: 0
-    weapon_Equip: 0
-  - weapon_Name: test
-    weapon_Img: {fileID: 21300000, guid: 9c1b7424cca7f4c2ea11ea16f0ce02ff, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 1
-    weapon_Code: 200000
-    weapon_Type: 0
-    weapon_Equip: 0
-  - weapon_Name: "\uAE30\uBCF8\uBB34\uAE30"
-    weapon_Img: {fileID: 21300000, guid: d8f9844ed42cc4dd695f698d05d62209, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 1
-    weapon_Code: 200501
-    weapon_Type: 1005
-    weapon_Equip: 1
-  equipWeponList:
-  - weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  - weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  - weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  - weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  - weapon_Name: "\uAE30\uBCF8\uBB34\uAE30"
-    weapon_Img: {fileID: 21300000, guid: d8f9844ed42cc4dd695f698d05d62209, type: 3}
-    weapon_Dmg: 100
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0.1
-    weapon_DmgPercent: 1
-    weapon_ExpPercent: 1
-    weapon_Price: 100
-    weapon_UpgradeCost: 0
-    weapon_Level: 1
-    weapon_MaxLevel: 20
-    weapon_Rank: 1
-    weapon_Code: 200501
-    weapon_Type: 1005
-    weapon_Equip: 1
-  spawnEnemyList: []
-  skillList:
-  - skillName: "\uACF5\uACA9\uB825 \uC99D\uAC00"
-    skillInfo: "\uACF5\uACA9\uB825\uC744 10\uC99D\uAC00\uC2DC\uD0A8\uB2E4."
-    skillCode: 4001001
-    skillTime: 15
-    skillImg: {fileID: 21300000, guid: 84da140438ffc476a9afcecfcd715b1b, type: 3}
-    skillEquip: 0
-    skillLearn: 0
-    skillUpgradeCost: 0
-  - skillName: "\uACF5\uACA9\uC18D\uB3C4\uC99D\uAC00"
-    skillInfo: "\uACF5\uACA9\uC18D\uB3C4\uB97C \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
-    skillCode: 4001002
-    skillTime: 15
-    skillImg: {fileID: 21300000, guid: 5821c6aaaf7f043259741ce9a3a3396c, type: 3}
-    skillEquip: 0
-    skillLearn: 0
-    skillUpgradeCost: 0
-  - skillName: "\uBC29\uC5B4\uB825 \uC99D\uAC00"
-    skillInfo: "\uBC29\uC5B4\uB825\uC744 \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
-    skillCode: 4001003
-    skillTime: 15
-    skillImg: {fileID: 21300000, guid: 46c91aa311f0240e59a5efc51ec8d8bb, type: 3}
-    skillEquip: 0
-    skillLearn: 0
-    skillUpgradeCost: 0
-  - skillName: "\uCF54\uC778\uD68D\uB4DD\uB7C9 \uC99D\uAC00"
-    skillInfo: "\uCF54\uC778 \uD68D\uB4DD\uB7C9\uC744 \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
-    skillCode: 4001004
-    skillTime: 15
-    skillImg: {fileID: 21300000, guid: 89e4b77b3059c4b06a354323e4994a59, type: 3}
-    skillEquip: 0
-    skillLearn: 0
-    skillUpgradeCost: 0
-  - skillName: "\uACBD\uD5D8\uCE58 \uC99D\uAC00"
-    skillInfo: "\uACBD\uD5D8\uCE58\uB97C \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
-    skillCode: 4001005
-    skillTime: 15
-    skillImg: {fileID: 21300000, guid: 06967d2f4ca6c4761a65ff87f6bfc623, type: 3}
-    skillEquip: 0
-    skillLearn: 0
-    skillUpgradeCost: 0
-  equipedSkill:
-  - skillName: "\uACF5\uACA9\uB825 \uC99D\uAC00"
-    skillInfo: "\uACF5\uACA9\uB825\uC744 10\uC99D\uAC00\uC2DC\uD0A8\uB2E4."
-    skillCode: 4001001
-    skillTime: 15
-    skillImg: {fileID: 21300000, guid: 84da140438ffc476a9afcecfcd715b1b, type: 3}
-    skillEquip: 0
-    skillLearn: 0
-    skillUpgradeCost: 0
-  skillInUse: []
-  logList: []
-  sceneCode: 0
-  playerLevel: 0
-  playerRank: 0
-  playerExp: 0
-  playerMaxExp: 0
-  playerCoin: 0
-  finalDmg: 0
-  Atk: 0
-  defense: 0
-  atkSpd: 0
-  atkDistance: 0
-  playerSpeed: 0
-  incomePercent: 0
-  dmgPercent: 0
-  expPercent: 0
-  equip_item_head:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_body:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_pants:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_shoose:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  equip_item_weapon:
-    weapon_Name: 
-    weapon_Img: {fileID: 0}
-    weapon_Dmg: 0
-    weapon_Def: 0
-    weapon_AtkSpd: 0
-    weapon_IncomePercent: 0
-    weapon_DmgPercent: 0
-    weapon_ExpPercent: 0
-    weapon_Price: 0
-    weapon_UpgradeCost: 0
-    weapon_Level: 0
-    weapon_MaxLevel: 0
-    weapon_Rank: 0
-    weapon_Code: 0
-    weapon_Type: 0
-    weapon_Equip: 0
-  slotCount: 0
-  skillCode: 0
---- !u!4 &1477445067
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477445065}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5153341, y: -0.23498824, z: 585.6195}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477455141
 GameObject:
   m_ObjectHideFlags: 0
@@ -17872,7 +17267,7 @@ GameObject:
   - component: {fileID: 1573366259}
   - component: {fileID: 1573366258}
   m_Layer: 0
-  m_Name: Text (Legacy)
+  m_Name: LevelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17895,8 +17290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 52.3, y: 61}
+  m_SizeDelta: {x: -118.25, y: -131.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1573366258
 MonoBehaviour:
@@ -17920,10 +17315,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -17931,7 +17326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: +99
 --- !u!222 &1573366259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19619,7 +19014,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755475193
 GameObject:
@@ -19804,7 +19199,7 @@ GameObject:
   - component: {fileID: 1761991713}
   - component: {fileID: 1761991712}
   m_Layer: 0
-  m_Name: Image
+  m_Name: EquipImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20055,7 +19450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1779911912
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23957,6 +23352,7 @@ MonoBehaviour:
     skillInfo: 
     skillCode: 0
     skillTime: 0
+    skillLevel: 0
     skillImg: {fileID: 0}
     skillEquip: 0
     skillLearn: 0
